@@ -3,8 +3,5 @@ class Solution:
         
         pre = [0] + list(accumulate(cardPoints))
         suf = [0] + list(accumulate(cardPoints[::-1]))
-        ans = 0
-        for i in range(k+1):
-            ans = max(ans, pre[i] + suf[k-i])
+        return max(pre[i] + suf[k-i] for i in range(k+1))
             
-        return ans
