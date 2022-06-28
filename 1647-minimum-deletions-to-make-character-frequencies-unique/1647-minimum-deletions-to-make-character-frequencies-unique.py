@@ -9,6 +9,5 @@ class Solution:
                 ans += min(freq[i],freq[i]-prev+1)
                 freq[i] = max(0,prev-1)
             prev = freq[i]
-            
-        #print(freq)
+
         return ans
