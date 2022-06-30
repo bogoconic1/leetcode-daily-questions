@@ -10,11 +10,4 @@ class Solution:
         for x in nums:
             ans += abs(x-median)
             
-        if n % 2:
-            return ans
-        
-        ans2 = 0
-        for x in nums:
-            ans2 += abs(x-median2)
-            
-        return min(ans,ans2)
+        return ans
