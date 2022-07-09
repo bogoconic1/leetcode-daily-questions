@@ -18,6 +18,5 @@ class Solution:
                 q.pop()
                 
             q.append((i,cur_val))
-                
-            
+
         return cur_val
